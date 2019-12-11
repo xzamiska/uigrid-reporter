@@ -24,7 +24,7 @@ app.controller('MainCtrl', ['$scope', '$http', function ($scope, $http) {
       return { text: currentPage.toString() + ' of ' + pageCount.toString(), style: 'footerStyle' };
     },
     exporterPdfCustomFormatter: function ( docDefinition ) {
-      docDefinition.styles.headerStyle = { fontSize: 22, bold: true };
+      docDefinition.styles.headerStyle = { fontSize: 22, bold: true, alignment: 'right' };
       docDefinition.styles.footerStyle = { fontSize: 10, bold: true };
       return docDefinition;
     },
